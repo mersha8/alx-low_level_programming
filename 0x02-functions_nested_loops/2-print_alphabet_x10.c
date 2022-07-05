@@ -1,22 +1,24 @@
 #include "main.h"
 
+
 /**
- * print_alphabet_x10 - func
- *
- * Return - 0
+ * print_alphabet_x10 - Print alphabet in lowercase 10 times
+ * Return: always 0 (Success)
  */
 void print_alphabet_x10(void)
 {
-int b = 0;
-while (b < 10)
-{
-char a = 'a';
-while (a <= 'z')
-{
-_putchar(a);
-a++;
-}
-_putchar('\n');
-b++;
-}
+	int i = 0;
+	char c;
+
+	while (i < 10)
+	{
+		c = 'a';
+		while (c <= 'z')
+		{
+			_putchar(c);
+			c++;
+		}
+		_putchar('\n');
+		i++;
+	}
 }
