@@ -1,29 +1,28 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_diagonal - Print diagonal line dependent on the integer n.
- * @n : The number of lines using '\' characters to use
- * Return: Void.
+ * print_diagonal - Draws a diagonal line using the \ character.
+ *
+ * @n: The number of \ characters to be printed.
  */
+
 void print_diagonal(int n)
 {
-	int i;
-	int spaces;
+	int line, space;
 
-	for (i = 0; i < n; i++)
+	if (n > 0)
 	{
-		for (spaces = 0; spaces < i; spaces++)
+		for (line = 0; line < n; line++)
 		{
-			_putchar(' ');
+			for (space = 0; space < line; space++)
+				_putchar(' ');
+			_putchar('\\');
+
+			if (line == n - 1)
+				continue;
+
+			_putchar('\n');
 		}
-		_putchar('\\');
-		_putchar('\n');
 	}
-
-	if (n <= 0)
-	{
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
-
