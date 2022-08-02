@@ -15,7 +15,8 @@ int _strlen(char *string)
 	return (i);
 }
 /**
- * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string@s1: string 1
+ * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
+ * @s1: string 1
  * @s2: string 2
  * @n: n bytes to concat from string 2
  * Return: pointer to concatenated string
